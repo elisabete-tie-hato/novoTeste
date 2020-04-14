@@ -28,6 +28,7 @@ public class Control {
 
     public static ArrayList<Object> getAllClientes() throws ClassNotFoundException, InstantiationException, IllegalAccessException, SQLException {
         System.out.println("controller.Control.getAllClientes()");
+        System.out.println("");
         return (ArrayList<Object>) ClienteDAO.getInstance().retrieveAll();
     }
 
