@@ -25,6 +25,7 @@ public class Control {
     public static void addCliente(String nome, String email) throws ClassNotFoundException, InstantiationException, IllegalAccessException, SQLException {
         ClienteDAO.getInstance().create(nome, email);
         System.out.println("controller.Control.addCliente()");
+        
     }
 
     public static ArrayList<Object> getAllClientes() throws ClassNotFoundException, InstantiationException, IllegalAccessException, SQLException {
